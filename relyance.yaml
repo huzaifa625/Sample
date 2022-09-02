@@ -1,0 +1,18 @@
+repository: Homeland
+
+services:
+  - service: MTNHomelandRoot
+    product:
+      - MTN-App
+    source:
+      - HomelandBackend
+      
+  - service: BrendaBackend
+    product:
+      - MTN-App
+    source:
+      - BrendaBackend
+      
+exclude:
+  - HomelandBackend/MfsMtnHomeLandAppService/src/test/java/com/mfs/www/mtnhomeland/service/tests
+  
